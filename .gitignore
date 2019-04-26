@@ -102,3 +102,5 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+drills/probability question set.ipynb
+probability question set.ipynb
