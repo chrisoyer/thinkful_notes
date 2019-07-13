@@ -36,18 +36,20 @@ LIMIT 5
 
 --What time of year is the cheapest time to go to San Francisco? What about the busiest?
 SELECT
-  cal.price,
+  AVG(cal.price::numeric),
   CASE WHEN 
-    EXTRACT(MONTH FROM cal.calender_date) <= 3
+    EXTRACT(MONTH FROM cal.calender_date) IN (1,2,3)
     THEN 'Winter'
-	WHEN 4 <= EXTRACT(MONTH FROM cal.calender_date) <= 6
+	WHEN EXTRACT(MONTH FROM cal.calender_date) IN (4,5,6)
 	THEN 'SPRING'
-	WHEN 7 <= EXTRACT(MONTH FROM cal.calender_date) <= 9
+	WHEN EXTRACT(MONTH FROM cal.calender_date) IN (7,8,9)
 	THEN 'Summer'
-	WHEN 10 <= EXTRACT(MONTH FROM cal.calender_date) <= 12
-	THEN 'FALL'
-	AS season
+	ELSE 'FALL'
+	END
+	AS season  
 FROM
   sfo_calendar AS cal
+GROUP BY 
+  season
 
 ;
