@@ -41,12 +41,14 @@ usedu_stateonly_df = usedu_stateonly_df.sort_values(by=["YEAR"]).groupby('STATE'
 
 #replace remaining nulls with state mean for column
 def statecolmean(df):
-    for column in df.columns:
+    df1 = df
+    for column in df1.columns:
         try:
-            df[column] = df.groupby('STATE')[column].transform(lambda x: x.fillna(x.mean()))
+            df1[column] = df1.groupby('STATE')[column].transform(lambda x: x.fillna(x.mean()))
         except TypeError:
             pass
-statecolmean(usedu_stateonly_df)    
+    return df1
+used_cl_df = statecolmean(usedu_stateonly_df)    
 
 
 
