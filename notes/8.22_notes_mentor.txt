@@ -1,0 +1,22 @@
+normalize before winsorization
+
+email after cleaning:
+ # cats in categorical
+# of missing values
+
+do heatmap after binarize features
+
+then feature selection
+drop over 92% corr
+reccomend: recursive feature elimination
+
+then feature engineering
+
+____
+When should recursive feature selection occur in process? since it needs a fited model. 
+
+Feature engineering to do? adding features on day of week, weekend, season. Feature engineering = domain knowledge.
+
+select k percentile - select based on criteria. BEST: barouta
+
+send email with update: used fancyimpute, barouta, added narrative, RFE BEFORE modeling.
