@@ -1,0 +1,31 @@
+ALL THE SHIT I SHOULD work on
+
+DEVOPS
+*docker containers
+* aws ec2 instances etc.
+
+STATS/ML
+* Time Series
+** VARIMAX
+** GARCH
+** Exponential Smoothing
+** LSTM NN
+* reinforcement learning
+* genetic algos
+* bayesian methods
+
+Old Project Updates
+* dog adoption
+** add survival analysis
+** try naive model without second data set
+** other metrics
+* clustering
+** fix scraper to get more stories
+** improve code quality
+* music reviews
+** ? add recomendation engine
+*** ma  testing
+*** matrix factorization methods
+
+
+http://bestsnow.net/
