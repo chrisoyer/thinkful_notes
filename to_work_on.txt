@@ -1,31 +1,51 @@
 ALL THE SHIT I SHOULD work on
 
+##########
+#Goals: 
+#showcase:
+#
+#Spark knowledge
+#NLP sparknlp or mllib or nltk/cython?
+#time series - statsmodels, box-jenkins, sarimax
+#AWS - ec2, awscli, s3, docker? awsml?
+#graph analysis/clustering?
+#Grinding leetcode algos/data structs
+#
+############
+
 DEVOPS
 *docker containers
 * aws ec2 instances etc.
 
 STATS/ML
-* Time Series
-** VARIMAX
-** GARCH
-** Exponential Smoothing
-** LSTM NN
 * reinforcement learning
 * genetic algos
 * bayesian methods
 
+New Project Ski
+* time series 
+** regression with SARIMA errors
+** exponential smoothing/GARCH??
+** LSTM deep learning
+** panel regression
+
+New Project NLP: English-sindarin vec2vec
+
 Old Project Updates
 * dog adoption
-** add survival analysis
+** add survival analysis - censor and model
 ** try naive model without second data set
 ** other metrics
 * clustering
 ** fix scraper to get more stories
 ** improve code quality
+** change to spaCy??
+** add advance word embedding
+** add advanced NLP methods
 * music reviews
 ** ? add recomendation engine
-*** ma  testing
 *** matrix factorization methods
-
+ss
+*** graph based recomendation engine
 
 http://bestsnow.net/
