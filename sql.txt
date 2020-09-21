@@ -1,0 +1,73 @@
+SQL
+
+
+CASE Expression
+When expression1 Then Result1
+When expression2 Then Result2
+...
+ELSE Result
+END
+
+--## WINDOW FUNCTIONS ##
+OVER (
+       [ <PARTITION BY clause> ]
+       [ <ORDER BY clause> ]
+       [ <ROW or RANGE clause> ]
+      )
+
+[ROWS | RANGE] BETWEEN <Start expr> AND <End expr>
+
+Where:
+<Start expr> is one of:
+UNBOUNDED PRECEDING: The window starts in the first row of the partition
+CURRENT ROW: The window starts in the current row
+<unsigned integer literal> PRECEDING or FOLLOWING
+
+<End expr> is one of:
+UNBOUNDED FOLLOWING: The window ends in the last row of the partition
+CURRENT ROW: The window ends in the current row
+<unsigned integer literal> PRECEDING or FOLLOWING
+Where it is not explicitly specified, the default window frame is “range between unbounded preceding and current row“
+
+RANGE includes values logically identical; ROWS is physical row
+
+
+FIRST_VALUE()
+LAG()
+LAST_VALUE()
+LEAD()
+
+AVG()
+COUNT()
+MAX()
+MIN()
+SUM()
+
+CUME_DIST()
+DENSE_RANK()
+NTILE()
+NTH_VALUE()
+PERCENT_RANK()
+RANK()
+ROW_NUMBER()
+
+
+####################
+# Stored Procedures#
+####################
+don't need to @variable because that would be sessions variable; non @variable gets reinitialized each time proc is called
+
+DELIMITER $$
+
+DROP PROC IF EXISTS spStoredProc;
+CREATE PROC spStoredProc(IN countryName VARCHAR(255))
+BEGIN
+	SELECT * 
+ 	FROM table
+	WHERE country = countryName;
+END $$
+
+DELIMITER ;
+
+-- then call procedure by
+EXEC spStoredProc or CALL spStoredProc('inputvalue')

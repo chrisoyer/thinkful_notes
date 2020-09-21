@@ -1,0 +1,49 @@
+SWE JOB RUBRIC
+
+COMMUNICATION:
+Scoping: candidate understands and can clarify 
+	CLarifying QS:
+	input constrations: verb. verify input assumptions.
+	Data Types: 
+	Scale of input: largest size, assume 64 bit, 
+listening: incorporate advice and hints
+verbal: describe ideas so interverer can understand
+Written: ability to write/create visuals
+Personality: someone you want to work with
+
+PROBLEM SOLVING:
+Raw capability: can they actually solve the problem
+Data Structures: characterize and use appropriately
+Algo Complexity: talk about space & time complexity
+Tradoff Analysis: Identify tradeoffs and when one solutions is better
+
+CODING:
+Execution: convert ideas to executable code
+Cleanliness: well organized with correct logical structures
+Speed: code written w/in allotted time
+Language: knowlege of chosen lang
+Bonus: knowlege of runtime costs of abstractions provided by their language
+
+VERIFICATION:
+test cases: consider reasonable set of test cases
+Debugging: if there are bugs, can you setp through logic to find bugs and explain what code is doing
+correctness: can you discuss reasons solution is good
+
+DONT ASK FOR A HINT. Ask about what you're doing, talk about your assumptions, what you're considering doing, etc. Try to flatter the interviewer and make it feel collaborative.
+
+Asking Qs:
+permission qs: can I google syntax, write some thoughts on paper, think about question, run it in interpreter
+Prefer Closed Ended Qs: shows you're more confident and have ideas yourself that you're just narrowing down and not just asking for help
+
+Don't start coding immediately. Talking first shows good communication, lets interviewer help you if they want. 
+Discuss bounds on time: easty=1-4 minutes, hard=1-12 minutes (leetcode levels)
+
+keywords:
+searc
+
+for whiteboard, note that you are using shorter var names than you would in production
+
+Don't run code blindly
+don't guess and check 
+if you change something, like = to =>, explain why it works now
+be sparing with print statements
