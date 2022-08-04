@@ -1,0 +1,13 @@
+main goals of role
+  get data into tableau for self-serve
+  data integrity into salesforce
+  
+how would role sit in business
+how anticipate biz changing over next few years
+  growth mode
+tools
+  100% cloud
+  tableau
+  
+  earnly next week
+  creativity & similar to actual role

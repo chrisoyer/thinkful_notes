@@ -1,4 +1,24 @@
 SQL
+code order
+SELECT
+FROM
+JOIN
+ON
+WHERE
+WINDOW
+HAVING
+ORDER BY
+LIMIT
+
+execution order:
+FROM
+WHERE
+GROUP BY
+HAVING
+SELECT
+DISTINCT
+ORDER BY
+LIMIT
 
 
 CASE Expression
@@ -33,7 +53,7 @@ RANGE includes values logically identical; ROWS is physical row
 
 
 FIRST_VALUE()
-LAG()
+LAG(<col>, <offset>)
 LAST_VALUE()
 LEAD()
 
@@ -45,8 +65,8 @@ SUM()
 
 CUME_DIST()
 DENSE_RANK()
-NTILE()
-NTH_VALUE()
+NTILE(<number of bins>)
+NTH_VALUE(<col>, <nth>)
 PERCENT_RANK()
 RANK()
 ROW_NUMBER()
@@ -71,3 +91,17 @@ DELIMITER ;
 
 -- then call procedure by
 EXEC spStoredProc or CALL spStoredProc('inputvalue')
+
+##################
+Grouping Sets
+##################
+GROUP BY
+  GROUPING SETS (
+  (<col>, <col>),
+  ()
+  )
+--OR to just do all combinations
+GROUP BY CUBE(<col>, <col2>)
+
+remember to add to select an identifier column for each eg
+GROUPING_ID(<col1>)

@@ -1,0 +1,19 @@
+corporate strengths, synergies from product lines?
+crosssales of products
+data from each product?, where does DS sit
+guiding internal vs external decisions
+one-off models vs ongoing monitoring & improvements
+
+Like:
+complexity of products
+e.g. business reporting: finding new solutions; csg fraud detect
+crosssales
+
+
+##
+cross prodcut
+bss
+Data scientist
+4 deep
+
+LOOK AT: Dask, debugging
